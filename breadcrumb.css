@@ -1,0 +1,58 @@
+.breadcrumb {
+    text-align: left;
+  }
+   .breadcrumb li {
+    float: left;
+  }
+  .breadcrumb a {
+    color: #fff;
+    background: darkcyan;
+    text-decoration: none;
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-right: 15px;
+    padding: 0 5px;
+  }
+  
+  .breadcrumb a::before {
+    content: "";
+    position: absolute;
+    border-color: yellow;
+    border-style: solid;
+    border-width: 15px 5px;
+  }
+
+  .breadcrumb a::after {
+    content: "";
+    position: absolute;
+    border-color: red;
+    border-style: solid;
+    border-width: 15px 5px;
+  }
+  /* Here shape the triangle */
+  
+  .breadcrumb a::before {
+    border-left-color: transparent;
+    left: -10px;
+  }
+  
+  .breadcrumb a::after {
+    border-color: transparent;
+    border-left-color: red;
+    left: 100%;
+  } 
+
+  /* Here are styles when hovering */
+  
+  /* .breadcrumb a:hover {
+    background-color: blue;
+  }
+  .breadcrumb a:hover::before {
+    border-color: blue;
+    border-left-color: transparent;
+  }
+  .breadcrumb a:hover::after {
+    border-left-color: blue;
+  } */
